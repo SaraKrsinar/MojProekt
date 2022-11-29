@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <link rel="stylesheet" href="doznaj.js" type="text/Javascript">
+    <link rel="stylesheet" href="doznaj.css" />
+    <title>Омилени</title>
+  </head>
+  <body>
+   
+    <div class="slider-container">
+        
+      <div class="left-slide">
+        <div style="background-color: #FFB866">
+          <div class="branns">
+            <img id="brann1" src="wave.gif" alt="">   
+            <img id="brann2" src="wave.gif" alt="">
+          </div>
+          <h1>МЕСТО</h1>
+          <h2 id="demo2" onmouseover="bran()" onmouseout="branout()">Грција</h2>
+          <br>
+          <p >Патувањето ми е омилено хоби. Обожавам да шетам, и некој ден би сакала да го прошетам целиот свет. 
+            Но дотогаш, ќе продолжам да уживам на најубавите плажи во Грција.
+          </p>
+          <img id="brann" src="fish.gif" alt="">
+          <br>
+          <a href="omileni.html">Назад</a>
+        </div>
+
+        <div style="background-color: #252E33">
+         <div class="pizzas">
+          <img id="pizz1" src="pizza.png" alt="">   
+          <img id="pizz2" src="pizza.png" alt="">
+        </div>
+          <br>
+          <br>
+            <h1 >ХРАНА</h1>
+            <h2 id="demo" onmouseover="pica()" onmouseout="pizzaout()">Пица со кулен</h2>
+            <br>  
+            <p>Сум пробала многу различни видови на пици,
+               и со сигурност можам да кажам
+              дека секогаш се враќам на најдобрата, 
+              the OG, пица со кулен. Би ви ја препорачала
+              пицата од <a href="https://pizzajakomo.com/">Јакомо</a>, 
+              дефинитивно една од најдобрите!
+            </p>
+            <br>
+            <img id="pizz" src="pizza.png" alt="">
+            <br>
+            <a href="omileni.html">Назад</a>
+          </div>
+          
+        <div style="background-color: #14891a">
+          <h1>МУЗИКА</h1>
+          <h2>Поп музика</h2>
+          <br>
+          <p>Слушам секаков жанр на музика, но омилена ми е поп музика.
+             Изборот на песни зависи од моето расположение. Ако сум повеќе 
+            расположена слушам повесели песни, додека пак ако тој ден не се 
+            чувствувам најдобро,песните ќе се одраз на тоа. Кога учам претежно
+            слушам исклучително англиска <a href="https://www.youtube.com/watch?v=41agnP19vAY">музика.</a>
+            <br>
+            <br>
+          </p>
+          <a href="omileni.html">Назад</a>
+        </div>
+
+        <div style="background-color: #FD3555">
+          <h1>ФИЛМ</h1>
+          <h2>Deadpool</h2>
+          <br>
+          <p>Обожавам филмови што ќе ме насмеат,
+            и ќе ме стават во добро расположение. 
+            Во овој филм комедија/акција Вејд Вилсон (Рајан Рејнолдс), којшто воедно е и еден од моите омилени актери,
+             е поранешен оперативец на специјалните 
+            сили кој сега работи како платеник. Неговиот свет се урива кога 
+            злобниот научник Ајакс (Ед Скрајн) го мачи, обезличува и го трансформира во <a href="https://www.imdb.com/title/tt1431045/plotsummary?ref_=tt_stry_pl">Дедпул.</a>  
+            Нечесниот експеримент го остава Дедпул со забрзана исцелителна моќ и извртена смисла за хумор. 
+            Со помош на мутантските сојузници Колос и Негасонична тинејџерска боева глава 
+            (Бријана Хилдебранд), Дедпул ги користи своите нови вештини за да го лови 
+            човекот кој за малку ќе му го уништил животот.
+          </p>
+          <a href="omileni.html">Назад</a>
+        </div>
+
+        <div style="background-color: #2A86BA">
+          <h1 id="box1">БОЈА</h1>
+          <h2 id="box3">Темно сина</h2>
+          <br>
+          <p id="box2">
+            Ако некој што ме познава го прашате на која боја ви текнува
+            кога ќе помислите на Сара, со сигурност на сите одговорот ќе биде:
+            темно сина! Да можам, целата гардероба и сите работи што ги имам,
+            ќе ми бидат сина боја. Бојата на океанот, бојата на небото навечер, и секако најважно,
+            бојата на моите очи.
+          </p>
+          <br>
+          <br>
+          <a href="omileni.html">Назад</a>
+        </div>
+
+      </div>
+      <div class="right-slide">
+        <div style="background-image: url('boja1.jpg')"></div>
+        <div style="background-image: url('dd.jpg')"></div>
+        <div style="background-image: url('mm.jpg')"></div>
+        <div style="background-image: url('pp.jpg')"></div>
+        <div style="background-image: url('1.jpg')"></div>
+        
+        
+        
+      </div>
+      <div class="action-buttons">
+        <button class="down-button">
+          <i class="fas fa-arrow-down"></i>
+        </button>
+        <button class="up-button">
+          <i class="fas fa-arrow-up"></i>
+        </button>
+      </div>
+    </div>
+
+    <script src="doznaj.js"></script>
+    <script >
+      const box1 = document.getElementById('box1');
+      const box2 = document.getElementById('box2');
+      const box3 = document.getElementById('box3');
+      const pizza = document.getElementById("pizz");
+
+      function start()
+    {
+      box1.addEventListener('mouseover', function handleMouseOver() 
+      {
+          box1.style.color = 'blue';
+      },false);
+    
+    
+    box1.addEventListener('mouseout', function handleMouseOut() 
+    {
+      box1.style.color = 'antiquewhite';
+    },false);
+
+    box2.addEventListener('mouseover', function handleMouseOver() 
+    {
+      box2.style.color = 'darkblue';
+    },false);
+    
+    
+    box2.addEventListener('mouseout', function handleMouseOut() 
+    {
+      box2.style.color = 'antiquewhite';
+    },false);
+
+    box3.addEventListener('mouseover', function handleMouseOver() 
+    {
+      box3.style.color = 'lightblue';
+    },false);
+    
+    
+    box3.addEventListener('mouseout', function handleMouseOut() 
+    {
+      box3.style.color = 'antiquewhite';
+    },false);
+    
+    
+}
+var demo= document.getElementById("demo");
+
+
+function pica()
+{
+
+    
+    demo.addEventListener('mouseover',function dodaj()
+    {
+        demo.style.color = 'red';
+        var pizza = document.getElementById("pizz");
+        pizza.style.visibility = 'visible';
+        var pizza1 = document.getElementById("pizz1");
+        pizza1.style.visibility = 'visible';
+        var pizza2 = document.getElementById("pizz2");
+        pizza2.style.visibility = 'visible';
+    },false);
+
+    
+}
+function pizzaout()
+{
+    demo.addEventListener('mouseout',function trgni()
+    {
+        demo.style.color = 'antiquewhite';
+        const pizza = document.getElementById("pizz");
+        pizza.style.visibility = 'hidden';
+        var pizza1 = document.getElementById("pizz1");
+        pizza1.style.visibility = 'hidden';
+        var pizza2 = document.getElementById("pizz2");
+        pizza2.style.visibility = 'hidden';
+    },false);
+    
+}
+
+window.addEventListener("load",start,false);
+    </script>
+  </body>
+</html>

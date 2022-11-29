@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: #4636f4;
+}
+.navbar{
+    background-color: rgb(117, 120, 120);
+    border-radius: 30px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    
+}
+.navbar ul{
+    overflow: auto;
+}
+.navbar li{
+    float:left;
+    list-style: none; 
+    margin: 13px 20px;
+    
+}
+.navbar li a{
+    padding: 3px 3px;
+    text-decoration: none;
+    color: white;
+}
+.navbar li a:hover{
+    color: rgb(255, 0, 204)
+}
+.search{
+    float: right;
+    color: white;
+    padding: 12px 75px;
+}
+.navbar input{
+    border: 2px solid rgb(117, 120, 120);
+    border-radius: 14px;
+    padding: 3px 17px;
+    width: 129px;
+}
+
+
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 40px 20px 0 20px;
+}
+
+.container .heading{
+  width: 50%;
+  padding-bottom: 50px;
+}
+.container .heading h3{
+  font-size: 3em;
+  font-weight: bolder;
+  padding-bottom: 10px;
+  border-bottom: 3px solid #222;
+}
+
+.container .heading h3 span{
+  font-weight: 100;
+}
+.container .box{
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+}
+
+.container .box .dream{
+  display: flex;
+  flex-direction: column;
+  width: 32.5%;
+}
+
+.container .box .dream img{
+  width: 100%;
+  padding-bottom: 15px;
+  border-radius: 5px;
+}
+
+.container .btn{
+  margin: 40px 0 70px 0;
+  background: #222;
+  padding: 15px 40px ;
+  border-radius: 5px;
+}
+
+.container .btn a{
+ color: #fff;
+ font-size: 1.2em;
+ text-decoration: none;
+ font-weight: bolder;
+ letter-spacing: 3px;
+}
+
+@media only screen and (max-width: 769px){
+    .container .box{
+   flex-direction: column;
+  }
+
+.container .box .dream{
+  width: 100%;
+}
+
+}
+
+@media only screen and (max-width: 643px){
+.container .heading{
+  width: 100%;
+}
+.container .heading h3{
+  font-size: 1em;
+
+}
+}
+
+#h1, #h2, #h3, #h4, #h5,
+#h6, #h7, #h8, #h9, #h10,
+#h11, #h12, #h13, #h14, #h15
+{
+    height: 60px;
+    width: 60px;
+
+
+}
+#p1,#p2,#p3,#p4,#p5,
+#p6,#p7, #p8, #p9, #p10,
+#p11, #p12, #p13, #p14, #p15
+{
+  font-size: 20px; 
+  text-align: justify;
+  padding: 4.8%;
+}

@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+body 
+{
+    background-color: #008CBA;
+}
+.container
+{
+    position: relative;
+    width: 1100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px;
+    
+}
+.container .card
+{
+    position: relative;
+    max-width: 300px;
+    height: 215px;
+    background: #aa00ba;
+    margin: 30px 10px;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 202px rgba(0,0,0,0.5);
+    transition: 0.3s ease-in-out;
+    
+}
+.container .card:hover
+{
+    height: 420px;
+
+}
+.container .card .image
+{
+    position: relative;
+    width: 260px;
+    height: 260px;
+    top: -60px;
+    left: 20px;
+    z-index: 1;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+    
+
+}
+.container .card .image img
+{
+    max-width: 100%;
+    border-radius: 4px;
+
+}
+.container .card .content
+{
+    font-size: 25px;
+    position: relative;
+    margin-top: -140px;
+    padding: 10px 15px;
+    text-align: center;
+    color:aquamarine;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+.container .card:hover .content
+{
+    visibility: visible;
+    opacity: 1;
+    margin-top: -40px;
+    transition-delay: 0.3s;
+
+}
+h2
+{
+    text-align: center;
+    color:rgb(255, 0, 128);
+    font-size: 50px;
+    font-weight: bold;
+    font-family: monospace;
+    font-family: Monaco;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.navbar{
+    background-color: rgb(117, 120, 120);
+    border-radius: 30px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    
+}
+.navbar ul{
+    overflow: auto;
+}
+.navbar li{
+    float:left;
+    list-style: none; 
+    margin: 13px 20px;
+    
+}
+.navbar li a{
+    padding: 3px 3px;
+    text-decoration: none;
+    color: white;
+}
+.navbar li a:hover{
+    color: rgb(255, 0, 204)
+}
+.search{
+    float: right;
+    color: white;
+    padding: 12px 75px;
+}
+.navbar input{
+    border: 2px solid rgb(117, 120, 120);
+    border-radius: 14px;
+    padding: 3px 17px;
+    width: 129px;
+}
+.btn {
+    background-color: rgb(255, 0, 128);
+    background-repeat: no-repeat;
+    cursor: pointer;
+    overflow: hidden;
+    border-color: rgb(255, 0, 128);
+    font-family: 'Poppins', sans-serif;
+    color: #008CBA;
+}
