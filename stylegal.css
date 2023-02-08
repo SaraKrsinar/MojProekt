@@ -141,3 +141,29 @@ body{
   text-align: justify;
   padding: 4.8%;
 }
+#container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+button {
+  padding: 10px 20px;
+  background-color: lightblue;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 50px;
+
+}
+
+@keyframes example {
+  0% { transform: scale(1); }
+  25% { transform: scale(1.1); }
+  50% { transform: scale(1); }
+}
+
+#click-me:active {
+  animation: example 0.5s;
+}

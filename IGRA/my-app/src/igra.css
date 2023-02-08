@@ -1,0 +1,60 @@
+.slide-in-title {
+    animation: slide-in 1s ease-out;
+  }
+  
+  @keyframes slide-in {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(0%);
+    }
+  }
+  #celo
+  {
+    background-color: #fffd74;
+    text-align: center;
+    margin-top: 150px;
+    padding: 20px 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  .fade-in-title {
+    animation: fade-in 4s ease-out;
+
+  }
+  
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  #kopce {
+    font-size: 20px;
+    padding: 10px 20px;
+    margin-right: 10px;
+    background-color: #cfffe5;
+    
+  }
+  body {
+    background-color:  rgb(222, 123, 222);
+  }
+  #izbor{
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    color: darkmagenta;
+  }
+  h1,h2 {
+    color: darkgreen;
+  }
+  #kopcee {
+    font-size: larger;
+    font-family: fantasy;
+    padding: 5px 10px;
+    background-color: transparent;
+    color: brown;
+    margin-top: 20px;
+  }

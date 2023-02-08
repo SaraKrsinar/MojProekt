@@ -1,56 +1,68 @@
-
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Дома</title>
-        <link rel="stylesheet" href="stylehome.css">
-    </head>
-    <body>
-        <header>
-            <nav class="navbar">
-                <ul>
-                    <li><a href="mojproekt.html">ПОЧЕТНА</a></li>
-                    <li><a href="doma.html">ДОМА</a></li>
-                    <li><a href="omileni.html">ОМИЛЕНИ</a></li>
-                    <li><a href="galerija.html">ГАЛЕРИЈА</a></li>
-                    <li><a href="blog.html">БЛОГ</a></li>
-                    <li><a href="anketa.html">АНКЕТА</a></li>
-                    <li><a href="kontakt.html">КОНТАКТ</a></li>
-                    
-                </ul>
-            </nav>
-        </header>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <div class="card">
-            <div class="circle"></div>
-            <div class="content">
-                <h2 id="sara" onmouseover="zdravo()" onmouseout="sara()">SARA</h2>
-                <p >Добредојдовте на мојата веб страна!
-                    Јас сум Сара, имам 21 година и студирам на најдобриот факултет во Македонија-Феит. 
-                Средно училиште завршив во Орце Николов, и уште тогаш ми се разви љубовта кон информатиката, па затоа одлучив да се 
-                запишам на Компјутерски технологии и инженерство. </p>
-            </div>
-            <IMG SRC="imgsara1.jpg"/>
-        </div>
-        <script type = "text/javascript">
-            function zdravo()
-            {
-                var zdr = document.getElementById("sara");
-                zdr.innerHTML = "HELLO";    
-            }
-            function sara()
-            {
-                var zdr = document.getElementById("sara");
-                zdr.innerHTML = "SARA";    
-            }
 
-        </script>
-        
-    </body>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Дома</title>
+    <link rel="stylesheet" href="stylehome.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#sara").mouseenter(function () {
+                $(this).html("HELLO");
+            });
+            $("#sara").mouseleave(function () {
+                $(this).html("SARA");
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="mojproekt.html">ПОЧЕТНА</a></li>
+                <li><a href="doma.html">ДОМА</a></li>
+                <li><a href="omileni.html">ОМИЛЕНИ</a></li>
+                <li><a href="galerija.html">ГАЛЕРИЈА</a></li>
+                <div class="dropdown">
+                    <button class="dropbtn">Блог
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="blog.html">Забава</a>
+                        <a href="bloghrana.html">Храна</a>
+                        <a href="blogmoda.html">Мода</a>
+                    </div>
+                </div>
+                <li><a href="anketa.html">АНКЕТА</a></li>
+                <li><a href="http://localhost:3001">ИГРА</a></li>
+                <li><a href="http://localhost:4200">ИГРА2</a></li>
+                <li><a href="http://localhost:50634">ФАКТИ</a></li>
+                <li><a href="kontakt.html">КОНТАКТ</a></li>
+
+            </ul>
+        </nav>
+    </header>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="card">
+        <div class="circle"></div>
+        <div class="content">
+            <h2 id="sara">SARA</h2>
+            <p>Добредојдовте на мојата веб страна!
+                Јас сум Сара, имам 21 година и студирам на Феит.
+                Средно училиште завршив во Орце Николов, и уште тогаш ми се разви љубовта кон информатиката, па затоа
+                одлучив да се
+                запишам на Компјутерски технологии и инженерство. </p>
+        </div>
+        <IMG SRC="imgsara1.jpg" />
+    </div>
+</body>
+
 </html>

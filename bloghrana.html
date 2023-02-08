@@ -6,6 +6,16 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Блог</title>
         <link rel="stylesheet" href="styleblog.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $("#saveBtn").click(function () {
+        var text = $("#textbox").val();
+        var date = new Date();
+        $("#display").append("<p>" + text + " - " + date + "</p>");
+      });
+    });
+  </script>
 </head>
 
 <body>
@@ -27,7 +37,9 @@
                       <a href="blogmoda.html">Мода</a>
                     </div>
                   </div>
-
+                <li><a href="http://localhost:3001">ИГРА</a></li>
+                <li><a href="http://localhost:4200">ИГРА2</a></li>
+                <li><a href="http://localhost:50634">ФАКТИ</a></li>
                 <li><a href="anketa.html">АНКЕТА</a></li>
                 <li><a href="kontakt.html">КОНТАКТ</a></li>
             </ul>
@@ -142,16 +154,15 @@
       <div class="footer" id="dodadihrana">
         <h2>Додади твој текст</h2>
 
-                <span class="textarea" id="input2"role="textbox" contenteditable></span>
-                <input type="submit"  value="Додај текст!" onclick="dodajtekst(2)" onkeydown="dodajtekst(2)">
-                <div id="div2">
-                  <p id="p2"></p>
-                  <p id="p2_1"></p>
-                </div>
+        <div id="container">
+          <span class="textarea" id="input2"role="textbox" contenteditable></span>
+          <button id="saveBtn">Додај го текстот!</button>
+        </div>
+        <div id="display"></div>
      
     </div>
 
-     <script src="blog.js"></script>
+
 </body>
 
 </html>

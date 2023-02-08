@@ -7,6 +7,50 @@
     <link rel="stylesheet" href="doznaj.js" type="text/Javascript">
     <link rel="stylesheet" href="doznaj.css" />
     <title>Омилени</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script >
+      $(document).ready(function()
+    {
+        $("#box1").mouseover(function()
+        {
+            $("#box1").css("color","blue");
+        });
+        $("#box1").mouseout(function()
+        {
+            $("#box1").css("color","antiquewhite");
+        });
+        $("#box2").mouseover(function()
+        {
+            $("#box2").css("color","darkblue");
+        });
+        $("#box2").mouseout(function()
+        {
+            $("#box2").css("color","antiquewhite");
+        });
+        $("#box3").mouseover(function()
+        {
+            $("#box3").css("color","lightblue");
+        });
+        $("#box3").mouseout(function()
+        {
+            $("#box3").css("color","antiquewhite");
+        });
+        $("#demo").mouseover(function()
+        {
+            $("#demo").css("color","red");
+            $("#pizz").css("visibility","visible");
+            $("#pizz1").css("visibility","visible");
+            $("#pizz2").css("visibility","visible");
+        });
+        $("#demo").mouseout(function()
+        {
+            $("#demo").css("color","antiquewhite");
+            $("#pizz").css("visibility","hidden");
+            $("#pizz1").css("visibility","hidden");
+            $("#pizz2").css("visibility","hidden");
+        });
+    });
+    </script>
   </head>
   <body>
    
@@ -121,86 +165,5 @@
     </div>
 
     <script src="doznaj.js"></script>
-    <script >
-      const box1 = document.getElementById('box1');
-      const box2 = document.getElementById('box2');
-      const box3 = document.getElementById('box3');
-      const pizza = document.getElementById("pizz");
-
-      function start()
-    {
-      box1.addEventListener('mouseover', function handleMouseOver() 
-      {
-          box1.style.color = 'blue';
-      },false);
-    
-    
-    box1.addEventListener('mouseout', function handleMouseOut() 
-    {
-      box1.style.color = 'antiquewhite';
-    },false);
-
-    box2.addEventListener('mouseover', function handleMouseOver() 
-    {
-      box2.style.color = 'darkblue';
-    },false);
-    
-    
-    box2.addEventListener('mouseout', function handleMouseOut() 
-    {
-      box2.style.color = 'antiquewhite';
-    },false);
-
-    box3.addEventListener('mouseover', function handleMouseOver() 
-    {
-      box3.style.color = 'lightblue';
-    },false);
-    
-    
-    box3.addEventListener('mouseout', function handleMouseOut() 
-    {
-      box3.style.color = 'antiquewhite';
-    },false);
-    
-    
-}
-var demo= document.getElementById("demo");
-
-
-function pica()
-{
-
-    
-    demo.addEventListener('mouseover',function dodaj()
-    {
-        demo.style.color = 'red';
-        var pizza = document.getElementById("pizz");
-        pizza.style.visibility = 'visible';
-        var pizza1 = document.getElementById("pizz1");
-        pizza1.style.visibility = 'visible';
-        var pizza2 = document.getElementById("pizz2");
-        pizza2.style.visibility = 'visible';
-    },false);
-
-    
-}
-function pizzaout()
-{
-    demo.addEventListener('mouseout',function trgni()
-    {
-        demo.style.color = 'antiquewhite';
-        const pizza = document.getElementById("pizz");
-        pizza.style.visibility = 'hidden';
-        var pizza1 = document.getElementById("pizz1");
-        pizza1.style.visibility = 'hidden';
-        var pizza2 = document.getElementById("pizz2");
-        pizza2.style.visibility = 'hidden';
-    },false);
-    
-}
-
-window.addEventListener("load",start,false);
-    </script>
-
   </body>
 </html>
